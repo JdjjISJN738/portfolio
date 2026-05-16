@@ -1,0 +1,70 @@
+/* ===== TILTED CARD 3D EFFECT ===== */
+.cert-card {
+    perspective: 800px;
+    transform-style: preserve-3d;
+}
+
+.cert-card-inner {
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+}
+
+/* Shine / glare overlay */
+.cert-card .tilt-glare {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: radial-gradient(
+        circle at var(--glare-x, 50%) var(--glare-y, 50%),
+        rgba(255, 255, 255, 0.25) 0%,
+        transparent 60%
+    );
+    z-index: 3;
+}
+
+.cert-card:hover .tilt-glare {
+    opacity: 1;
+}
+
+/* Floating tooltip caption */
+.cert-card .tilt-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(37, 99, 235, 0.9);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 5;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+    transform: translate(-50%, -50%);
+}
+
+/* Subtle border glow on tilt */
+.cert-card.tilting {
+    box-shadow:
+        0 15px 35px rgba(37, 99, 235, 0.1),
+        0 0 0 1px rgba(37, 99, 235, 0.15);
+}
+
+/* Mobile: disable 3D tilt, keep cards flat */
+@media (max-width: 768px) {
+    .cert-card {
+        perspective: none;
+    }
+    .cert-card .tilt-glare,
+    .cert-card .tilt-caption {
+        display: none;
+    }
+}

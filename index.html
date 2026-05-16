@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hariharan V | Portfolio</title>
+    <meta name="description" content="Portfolio of Hariharan V - Full Stack Developer & UI/UX Designer">
+    <meta property="og:title" content="Hariharan V | Portfolio">
+    <meta property="og:description" content="Full Stack Developer & UI/UX Designer. Projects, designs, and contact.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Profile.jpeg">
+    <meta property="og:url" content="https://hariharan-v.vercel.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hariharan V | Portfolio">
+    <meta name="twitter:description" content="Full Stack Developer & UI/UX Designer. Projects, designs, and contact.">
+    <meta name="twitter:image" content="images/Profile.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=2.0">
+    <link rel="stylesheet" href="css/custom.css?v=2.0">
+    <link rel="stylesheet" href="css/TargetCursor.css">
+    <link rel="stylesheet" href="css/ScrollFloat.css">
+    <link rel="stylesheet" href="css/TiltedCard.css">
+    <link rel="stylesheet" href="css/Ballpit.css">
+    <link rel="stylesheet" href="css/HorizontalCarousel.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loading-text">
+                Loading<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+            </div>
+            <div class="loading-bar-background">
+                <div class="loading-bar">
+                    <div class="white-bars-container">
+                        <div class="white-bar"></div>
+                        <div class="white-bar"></div>
+                        <div class="white-bar"></div>
+                        <div class="white-bar"></div>
+                        <div class="white-bar"></div>
+                        <div class="white-bar"></div>
+                        <div class="white-bar"></div>
+                        <div class="white-bar"></div>
+                        <div class="white-bar"></div>
+                        <div class="white-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">HARIHARAN<span>.</span></a>
+            <div class="nav-right">
+                <div class="nav-links" id="navLinks">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#about" class="nav-link" data-cursor-tip="About">About</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link" data-cursor-tip="Work">Project</a></li>
+                        <li class="nav-item"><a href="#achievements" class="nav-link" data-cursor-tip="Awards">Achievements</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-contact-btn" data-cursor-tip="Say Hi!">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="header-actions">
+                    <div class="toggle-switch">
+                        <label class="switch-label">
+                            <input type="checkbox" class="checkbox" id="themeCheckbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <i class="fas fa-bars" id="showMenu"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="nav-shimmer"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Ballpit Background Canvas -->
+        <div class="ballpit-container" id="ballpit-canvas"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Hariharan V</span></h1>
+                <h2 class="typing-text"> <span class="typing">Full Stack Developer</span></h2>
+                <p>I’m interested in Python development, UI and poster design, web design, software testing, and backend
+                    development, with a focus on simple, user-friendly and reliable solutions.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary" data-cursor-tip="Let's Talk">Hire Me</a>
+                    <a href="#projects" class="btn btn-secondary" data-cursor-tip="My Work">View Work</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/JdjjISJN738" target="_blank" aria-label="GitHub" data-cursor-tip="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/hariharanv" target="_blank" aria-label="LinkedIn" data-cursor-tip="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/HariharanV79899" target="_blank" aria-label="Twitter" data-cursor-tip="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Profile.jpeg" alt="Hariharan V">
+                        </div>
+                        <div class="card-back">
+                            <img src="images/Avatar.png" alt="Trendy Avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Aspiring professional with a strong foundation in programming, data structures, and web
+                        development. Eager to apply my knowledge and skills in a dynamic work environment. Committed to
+                        continuous learning and contributing to innovative projects.</p>
+                    <div class="info">
+                        <div class="info-item">
+                            <span>Name:</span> <span>Hariharan V</span>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span> <span>srihariharan26ias@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span>Phone:</span> <span>+91 7418735076</span>
+                        </div>
+                        <div class="info-item">
+                            <span>Location:</span> <span>Erode,Tamilnadu</span>
+                        </div>
+                        <div class="info-item">
+                            <span>Education:</span> <span>B.tech/IT in Jkk Munirajah College of Technology (2023-2026)</span>
+                        </div>
+                        <div class="info-item">
+                            <span>CGPA:</span> <span>8.50</span>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1-Cz3_DeKr7FOuH20Jrdz6MznzrXQXvXt/view?usp=drive_link"
+                        class="btn btn-primary" data-cursor-tip="Download">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Programming Languages</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" title="Python"><img src="https://cdn.simpleicons.org/python/3776AB"
+                                alt="Python"></span>
+                        <span class="skill-tag" title="JavaScript"><img
+                                src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"></span>
+                        <span class="skill-tag" title="MySQL"><img src="https://cdn.simpleicons.org/mysql/4479A1"
+                                alt="SQL"></span>
+                        <span class="skill-tag" title="GitHub"><img
+                                src="https://cdn.simpleicons.org/github" alt="GitHub"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Web Technologies</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" title="HTML5"><img src="https://cdn.simpleicons.org/html5/E34F26"
+                                alt="HTML5"></span>
+                        <span class="skill-tag" title="CSS3"><img
+                                src="https://img.icons8.com/color/144/000000/css3.png" alt="CSS3"></span>
+                        <span class="skill-tag" title="Node.js"><img src="https://cdn.simpleicons.org/nodedotjs/339933"
+                                alt="Node.js"></span>
+                        <span class="skill-tag" title="Tailwind CSS"><img
+                                src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Designing</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" title="Figma"><img src="https://cdn.simpleicons.org/figma/F24E1E"
+                                alt="Figma"></span>
+                        <span class="skill-tag" title="Canva"><img
+                                src="https://img.icons8.com/color/144/000000/canva.png"
+                                alt="Canva"></span>
+                        <span class="skill-tag" title="Photoshop"><img
+                                src="https://img.icons8.com/color/144/000000/adobe-photoshop.png" alt="Photoshop"></span>
+                        <span class="skill-tag" title="Illustrator"><img
+                                src="https://img.icons8.com/color/144/000000/adobe-illustrator.png" alt="Illustrator"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Tools &amp; Platforms</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" title="VS Code"><img
+                                src="https://cdn-icons-png.flaticon.com/128/17379/17379046.png" alt="VS Code"></span>
+                        <span class="skill-tag" title="AWS"><img
+                                src="https://cdn.iconscout.com/icon/free/png-256/free-amazon-aws-icon-svg-download-png-3029842.png"
+                                alt="AWS"></span>
+                        <span class="skill-tag" title="MS Office"><img
+                                src="https://cdn-icons-png.flaticon.com/128/732/732221.png" alt="MS Office"></span>
+                    </div>
+                </div>
+                <!-- Soft Skills Sub-heading -->
+                <div class="skill-subheading">
+                    <h2 class="section-title">Soft Skills</h2>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Teamwork</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%">
+                            <div class="white-bars-container">
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Creativity & Adaptability</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%">
+                            <div class="white-bars-container">
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Communication (English)</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%">
+                            <div class="white-bars-container">
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                                <div class="white-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Problem Solving</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="carousel-container" id="tech-carousel">
+                <div class="carousel-track projects-grid carousel-active">
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <div class="project-card-inner">
+                                <div class="project-img">
+                                    <img src="images/analysis.png" alt="Sentiment Analysis">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Sentiment Analysis in Twitter</h3>
+                                    <p>Classifies tweets into positive/negative/neutral sentiment for public opinion summary.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">NLTK</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://tweetverse-woad.vercel.app" target="_blank" class="btn btn-primary btn-small">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <div class="project-card-inner">
+                                <div class="project-img">
+                                    <img src="images/chatbot.png" alt="College Enquiry">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Chatbot for College Enquiry</h3>
+                                    <p>Automates college enquiries by answering FAQs like courses, fees, and admission.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Flask</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://mycollegechatbot.netlify.app" target="_blank" class="btn btn-primary btn-small">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <div class="project-card-inner">
+                                <div class="project-img">
+                                    <img src="images/nature.png" alt="E-Commerce Website">
+                                </div>
+                                <div class="project-info">
+                                    <h3>E-Commerce Website (Nature Products)</h3>
+                                    <p>A nature-products e-commerce website with product listing and checkout.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">Node.js</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://hygieneathome.netlify.app" target="_blank" class="btn btn-primary btn-small">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <div class="project-card-inner">
+                                <div class="project-img">
+                                    <img src="images/healthui.png" alt="AI Based Health Monitor">
+                                </div>
+                                <div class="project-info">
+                                    <h3>AI Based Health Monitor</h3>
+                                    <p>Tracks health indicators and uses AI to provide insights and alerts.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">TensorFlow</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://ai-pulse-ze6x.vercel.app" target="_blank" class="btn btn-primary btn-small">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <h2 class="section-title designing-title">Designing</h2>
+            <div class="carousel-container" id="design-carousel">
+                <div class="carousel-track projects-grid carousel-active">
+                    <div class="carousel-item">
+                        <div class="project-card design-card">
+                            <div class="project-card-inner">
+                                <div class="project-img">
+                                    <img src="images/mathui.png" alt="Simple Math Application UI">
+                                </div>
+                                <div class="project-info">
+                                    <h3 data-number="1.">Simple Math Application UI</h3>
+                                    <p>UI design for a clean and beginner-friendly math practice application.</p>
+                                    <div class="project-links">
+                                        <a href="#" class="btn btn-secondary btn-small">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-card design-card">
+                            <div class="project-card-inner">
+                                <div class="project-img">
+                                    <img src="images/filesui.png" alt="File Manager UI">
+                                </div>
+                                <div class="project-info">
+                                    <h3 data-number="2.">File Manager UI</h3>
+                                    <p>Modern file manager interface concepts focusing on usability.</p>
+                                    <div class="project-links">
+                                        <a href="#" class="btn btn-secondary btn-small">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-card design-card">
+                            <div class="project-card-inner">
+                                <div class="project-img">
+                                    <img src="images/poster.png" alt="Posters">
+                                </div>
+                                <div class="project-info">
+                                    <h3 data-number="3.">Posters</h3>
+                                    <p>Poster designs for events and promotions with a clear visual hierarchy.</p>
+                                    <div class="project-links">
+                                        <a href="#" class="btn btn-secondary btn-small">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="project-card design-card">
+                            <div class="project-card-inner">
+                                <div class="project-img">
+                                    <img src="images/brochure.png" alt="Branding">
+                                </div>
+                                <div class="project-info">
+                                    <h3 data-number="4.">Brochures & Branding</h3>
+                                    <p>Brochures and branding advertisements to communicate ideas clearly.</p>
+                                    <div class="project-links">
+                                        <a href="#" class="btn btn-secondary btn-small">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon"><i class="fab fa-python"></i></div>
+                        <div class="cert-title">
+                            <h3>Advanced Python</h3>
+                            <span>Simplilearn</span>
+                        </div>
+                    </div>
+                    <div class="cert-meta">
+                        <span>2025</span>
+                        <span>Credential ID: GDA-12345</span>
+                    </div>
+                    <div class="cert-actions">
+                        <a href="#" class="btn btn-outline btn-small">View Credential</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                        <div class="cert-title">
+                            <h3>AI&ML</h3>
+                            <span>NoviTech Pvt. Ltd.</span>
+                        </div>
+                    </div>
+                    <div class="cert-meta">
+                        <span>2024</span>
+                        <span>Credential ID: AWS-CP-90876</span>
+                    </div>
+                    <div class="cert-actions">
+                        <a href="#" class="btn btn-outline btn-small">View Credential</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon"><i class="fas fa-palette"></i></div>
+                        <div class="cert-title">
+                            <h3>Graphic Designer</h3>
+                            <span>Canva</span>
+                        </div>
+                    </div>
+                    <div class="cert-meta">
+                        <span>2024</span>
+                        <span>Credential ID: FSD-56789</span>
+                    </div>
+                    <div class="cert-actions">
+                        <a href="#" class="btn btn-outline btn-small">View Credential</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="cert-title">
+                            <h3>HP LIFE Certification</h3>
+                            <span>HP LIFE</span>
+                        </div>
+                    </div>
+                    <div class="cert-meta">
+                        <span>Online</span>
+                        <span>Certificate</span>
+                    </div>
+                    <div class="cert-actions">
+                        <a href="https://drive.google.com/file/d/1laPA13rpffEjg5qnt8Iz0y6VHq-xTJSw/view" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline btn-small">View Credential</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon"><i class="fab fa-amazon"></i></div>
+                        <div class="cert-title">
+                            <h3>Amazon Certification</h3>
+                            <span>Amazon</span>
+                        </div>
+                    </div>
+                    <div class="cert-meta">
+                        <span>Online</span>
+                        <span>Certificate</span>
+                    </div>
+                    <div class="cert-actions">
+                        <a href="https://drive.google.com/file/d/1trtajBWHnYMQNJPb9E-FzMOGQd-2EbK8/view" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline btn-small">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-trophy"></i></div>
+                    <div class="timeline-content">
+                        <h3>Hackathon Participant</h3>
+                        <span>2025 • College Level</span>
+                        <p>Led a team to build a real-time classroom scheduler; best performer among 30+ teams.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-award"></i></div>
+                    <div class="timeline-content">
+                        <h3>Best Design</h3>
+                        <span>2024 • Design Competition</span>
+                        <p>Recognized for crafting innovative and creative design collections.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-medal"></i></div>
+                    <div class="timeline-content">
+                        <h3>Best Performer</h3>
+                        <span>2025 • Internship(Sep-Dec)</span>
+                        <p>Delivered feature enhancements and performance optimizations that improved load times by 30%.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <!-- Contact Info Card -->
+                <div class="contact-card contact-info-card">
+                    <h3>Let's work together!</h3>
+                    <p>I am actively seeking new job opportunities and would welcome the opportunity to interview. If
+                        you are hiring or would like to discuss a suitable role, please feel free to contact me.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:srihariharan26ias@gmail.com">srihariharan26ias@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+917418735076">+91 7418 735076</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <span>Erode,Tamilnadu</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/hariharanv"
+                                    target="_blank">linkedin.com/in/hariharanv</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/JdjjISJN738" target="_blank">github.com/JdjjISJN738</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="contact-card contact-form-card">
+                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Replace with your Access Key from https://web3forms.com/ -->
+                        <input type="hidden" name="access_key" value="5441676b-a0ef-4c31-9d76-4946386bf70a">
+
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+
+                    <div class="form-separator">
+                        <span>Or contact me directly:</span>
+                    </div>
+
+                    <div class="fallback-buttons">
+                        <a href="mailto:srihariharan26ias@gmail.com" class="btn btn-outline btn-small">
+                            <i class="fas fa-envelope"></i> Open Email App
+                        </a>
+                        <a href="https://wa.me/7418735076?" target="_blank" class="btn btn-outline btn-small">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Hariharan V. All rights reserved.</p>
+            <ul class="example-2 footer-social">
+                <li class="icon-content">
+                    <a data-social="github" href="https://github.com/JdjjISJN738" target="_blank" aria-label="GitHub">
+                        <div class="filled"></div>
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <div class="tooltip">GitHub</div>
+                </li>
+                <li class="icon-content">
+                    <a data-social="linkedin" href="https://linkedin.com/in/hariharanv" target="_blank"
+                        aria-label="LinkedIn">
+                        <div class="filled"></div>
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <div class="tooltip">LinkedIn</div>
+                </li>
+                <li class="icon-content">
+                    <a data-social="email" href="mailto:srihariharan26ias@gmail.com" aria-label="Email">
+                        <div class="filled"></div>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <div class="tooltip">Email</div>
+                </li>
+                <li class="icon-content">
+                    <a data-social="whatsapp" href="https://wa.me/7418735076?" target="_blank" aria-label="WhatsApp">
+                        <div class="filled"></div>
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <div class="tooltip">WhatsApp</div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="js/TargetCursor.js"></script>
+    <script src="js/ScrollFloat.js"></script>
+    <script src="js/TiltedCard.js"></script>
+    
+    <!-- Three.js for Ballpit -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="js/HorizontalCarousel.js"></script>
+    <script src="js/Ballpit.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvasDiv = document.getElementById('ballpit-canvas');
+            if (canvasDiv && window.initBallpit) {
+                // Create canvas element inside the container
+                const canvas = document.createElement('canvas');
+                canvasDiv.appendChild(canvas);
+                
+                // Responsive ball settings
+                const isMobile = window.innerWidth < 768;
+                const ballCount = isMobile ? 10 : 100;
+                const ballSize = isMobile ? 0.6 : 1.0;
+                
+                // Initialize Ballpit with requested settings
+                window.initBallpit(canvas, {
+                    count: ballCount,
+                    maxSize: ballSize,
+                    gravity: 0.01,
+                    friction: 0.9975,
+                    wallBounce: 0.95,
+                    followCursor: false
+                });
+            }
+        });
+    </script>
+    
+    <script src="js/main.js?v=2.0" defer></script>
+</body>
+
+</html>

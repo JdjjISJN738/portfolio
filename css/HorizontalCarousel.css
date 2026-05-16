@@ -1,0 +1,69 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 4rem 0;
+    cursor: grab;
+}
+
+.carousel-container:active {
+    cursor: grabbing;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 4.5rem; /* Increased gap */
+    width: max-content;
+    padding: 0 4rem;
+    will-change: transform;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    width: 350px;
+    perspective: 1000px;
+    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* 3D Perspective effect */
+.carousel-track .project-card {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+/* Hide the default grid layout if carousel is active */
+.projects-grid.carousel-active {
+    display: flex;
+    flex-wrap: nowrap;
+    grid-template-columns: none;
+    gap: 0;
+    margin-top: 0;
+}
+
+/* Optional: Add a subtle vignette to edges */
+.carousel-container::before,
+.carousel-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.carousel-container::before {
+    left: 0;
+    background: linear-gradient(90deg, var(--bg-color) 0%, transparent 100%);
+}
+
+.carousel-container::after {
+    right: 0;
+    background: linear-gradient(-90deg, var(--bg-color) 0%, transparent 100%);
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        width: 280px;
+    }
+}
