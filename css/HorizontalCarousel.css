@@ -12,7 +12,7 @@
 
 .carousel-track {
     display: flex;
-    gap: 4.5rem; /* Increased gap */
+    gap: 3.5rem; /* Consistent gap */
     width: max-content;
     padding: 0 4rem;
     will-change: transform;

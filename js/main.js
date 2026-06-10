@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Clear any existing text before starting animation
         typedTextSpan.textContent = '';
         
-        const textArray = ['Full Stack Developer', 'UI/UX Designer'];
+        const textArray = ['Graphic Designer', 'Frontend Developer', 'UI/UX Designer'];
         const typingDelay = 100;
         const erasingDelay = 50;
         const newTextDelay = 2000;
